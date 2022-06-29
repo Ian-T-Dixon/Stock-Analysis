@@ -6,6 +6,8 @@ The goal of this project is to analyze "Green Energy" stocks using historical st
 ## Analysis
 By writing a VBA script to analyize the data from our 12 sample stocks, we are able to quickly and accurately calculate the two metrics we are using to compare the stocks. As seen in the screenshots below, we can now make simple inferences from our results such as: How has the stock performed over the last couple of years? How liquid is the stock? 
 
+![2017 Results](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/results_2017.PNG) ![2018 Results](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/results_2018.PNG)
+
 In order to achieve this, we pulled the historical trading data from all 12 stocks for 2017 and 2018. Using ```for loops``` and ```variables``` we are able to write a simple mathmatical function that automatically calculates the values we are after. In the second iteration of the code, we refactored the individual ```for loops``` to a single ```for loop``` and used arrays to simplify the code and speed up the macro's ability to calculate our values. 
 ```
         For i = 2 To RowCount
@@ -37,6 +39,8 @@ In order to achieve this, we pulled the historical trading data from all 12 stoc
 ```
 
 Follwing the refactoring of the code, we were able to achieve much faster calculation times, as seen in the screenshots below.
+
+![2017 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/runtime_2017.PNG) ![2018 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/runtime_2018.PNG)
 
 ### Results
 Refactoring a code makes it easier to comprehend as well as increase the process speed (ideally). This is imporant especially in programs that get used often and repetitively. However, by changing the code it is possible to introduce new bugs, and debugging can be a challenge; especially with long and complex code. 
