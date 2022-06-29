@@ -40,7 +40,7 @@ In order to achieve this, we pulled the historical trading data from all 12 stoc
 
 Follwing the refactoring of the code, we were able to achieve much faster calculation times, as seen in the screenshots below.
 
-![2017 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/runtime_2017.PNG) ![2018 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/runtime_2018.PNG)
+![2017 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/VBA_Challenge_2017.PNG) ![2018 Runtime](https://github.com/Ian-T-Dixon/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
 ### Results
 Refactoring a code makes it easier to comprehend as well as increase the process speed (ideally). This is imporant especially in programs that get used often and repetitively. However, by changing the code it is possible to introduce new bugs, and debugging can be a challenge; especially with long and complex code. 
