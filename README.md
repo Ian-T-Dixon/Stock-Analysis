@@ -1,4 +1,4 @@
-# Stock Analysis
+# "Green Energy" Stock Analysis
 
 ## Project Overview
 The goal of this project is to analyze "Green Energy" stocks using historical stock data. In this analysis, we are looking at 12 different stocks and comparing two specific data points: yearly volume, and yearly return. By calculating these values, we are able to determine which stocks best fit our clients portfolio. We are also anaylizing data from both 2017 and 2018 to get a better understanding of how the stocks have performed on a longer time horizon. 
@@ -12,16 +12,14 @@ In order to achieve this, we pulled the historical trading data from all 12 stoc
     
         '3a) Increase volume for current ticker
         
-        tickerVolumes(tickerindex) = tickerVolumes(tickerindex) + Cells(i, 8).Value
+                tickerVolumes(tickerindex) = tickerVolumes(tickerindex) + Cells(i, 8).Value
         
         '3b) Check if the current row is the first row with the selected tickerIndex.
-        'If  Then
             
             If Cells(i, 1).Value <> Cells(i - 1, 1).Value Then
          
-            tickerStartingPrices(tickerindex) = Cells(i, 6).Value
+                tickerStartingPrices(tickerindex) = Cells(i, 6).Value
             
-        'End If
             End If
         
         '3c) check if the current row is the last row with the selected ticker
@@ -29,13 +27,13 @@ In order to achieve this, we pulled the historical trading data from all 12 stoc
             
             If Cells(i, 1).Value <> Cells(i + 1, 1).Value Then
          
-            tickerEndingPrices(tickerindex) = Cells(i, 6).Value
+                tickerEndingPrices(tickerindex) = Cells(i, 6).Value
          
-         
-
-            '3d Increase the tickerIndex.
+         '3d Increase the tickerIndex.
             
-            tickerindex = tickerindex + 1
+                tickerindex = tickerindex + 1
+            
+            End If
 ```
 
 Follwing the refactoring of the code, we were able to achieve much faster calculation times, as seen in the screenshots below.
